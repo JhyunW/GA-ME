@@ -1,0 +1,42 @@
+/* neon-border.css */
+@keyframes neon {
+    from, to {
+      box-shadow:
+      0 0 5px #c8c8c8,
+      0 0 10px #c8c8c8,
+      0 0 20px #608894,
+      0 0 30px #608894,
+      0 0 40px #608894
+      /* 0 0 70px #0fa; */
+    }
+    20%, 24%, 55% {        
+        box-shadow:
+        0 0 5px #c8c8c8,
+        0 0 10px #c8c8c8,
+        0 0 15px #608894,
+        0 0 20px #608894,
+        0 0 35px #608894;
+    }
+  }
+  
+  .neonBorder {
+    animation: neon 2s infinite alternate;
+  }
+
+  .statisticsContainer{
+    width: 85%;
+    max-width: 1280px; /* 스크린 크기에 맞춰 변경할 수 있습니다 */
+    background-color: #333333; /* 회색 대신에 원하는 색상을 사용할 수 있습니다 */
+    border-radius: 20px; /* 둥근 테두리의 반지름을 설정합니다 */
+    margin-top: 20px;
+    padding: 10px;
+  }
+  
+  /* Statistics.module.css */
+.flexColumnCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 세로 방향에서 중앙 정렬 */
+  align-items: center; /* 가로 방향에서 중앙 정렬 */
+  width: 100%; /* 부모 컨테이너의 전체 너비를 사용 */
+}

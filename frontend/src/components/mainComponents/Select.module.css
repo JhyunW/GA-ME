@@ -1,0 +1,40 @@
+/* 깜빡임효과 */
+@keyframes neonFlicker {
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+      text-shadow:
+        0 0 5px #c8c8c8,
+        0 0 10px #c8c8c8,
+        0 0 20px #608894,
+        0 0 30px #608894,
+        0 0 40px #608894
+        /* 0 0 50px #608894 */
+        /* 0 0 60px #608894 */
+        /* 0 0 70px #608894 */
+        ;
+      color: #ffffff;
+    }
+    20%, 24%, 55% {        
+      text-shadow: none;
+      color: #5e5e5e;
+    }
+  }
+  
+  .neonText {
+    animation: neonFlicker 1.5s infinite alternate;
+  }
+
+
+  /* 기본네온 */
+  .neonNormal {
+    color: #ffffff; /* Set the text color */
+    text-shadow:
+    0 0 5px #c8c8c8,
+    0 0 10px #608894
+    /* 0 0 20px #608894 */
+    /* 0 0 30px #608894 */
+    /* 0 0 40px #608894 */
+    /* 0 0 50px #608894 */
+    /* 0 0 60px #608894 */
+    /* 0 0 70px #608894 */
+    ;
+  }

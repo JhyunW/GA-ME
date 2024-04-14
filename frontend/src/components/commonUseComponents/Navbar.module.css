@@ -1,0 +1,66 @@
+/* neon-border.css */
+@keyframes neon {
+  from, to {
+    box-shadow:
+    0 0 5px #c8c8c8,
+    0 0 10px #c8c8c8,
+    0 0 20px #608894,
+    0 0 30px #608894,
+    0 0 40px #608894
+    /* 0 0 70px #0fa; */
+  }
+  20%, 24%, 55% {        
+      box-shadow:
+      0 0 5px #c8c8c8,
+      0 0 10px #c8c8c8,
+      0 0 15px #608894,
+      0 0 20px #608894,
+      0 0 35px #608894;
+  }
+}
+
+.neonBorder {
+  animation: neon 2s infinite alternate;
+}
+
+.arrow{
+  color: #bad9e0;
+  margin: 3px;
+  margin-left: 5px;
+}
+
+.navBox{
+  margin-top: 5px;
+}
+
+/* 추가 */
+
+@keyframes neon2 {
+  from, to {
+    box-shadow:
+    0 0 5px #c8c8c8,
+    0 0 10px #8272b0,
+    0 0 20px #8272b0,
+    0 0 30px #8272b0,
+    0 0 40px #8272b0
+    /* 0 0 70px #0fa; */
+  }
+  20%, 24%, 55% {        
+      box-shadow:
+      0 0 5px #47737e,
+      0 0 10px #608894,
+      0 0 15px #608894,
+      0 0 20px #608894,
+      0 0 35px #608894;
+  }
+}
+
+
+.neonBorder2 {
+  animation: neon2 4s infinite alternate;
+}
+
+.labelColor{
+  color: #ffffff;
+  text-shadow: 0px 0px 10px #7aa7b2;
+}

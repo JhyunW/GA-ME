@@ -1,0 +1,51 @@
+/* Detail.css */
+
+/* 디테일 본문을 감싸는 클래스 */
+.detailContent {
+    position: relative;
+    width: 65%;
+    height: 2000px;
+    top: 450px; /* 부모 요소인 기준으로 위로부터 이동 */
+    left: 50%; /* 부모 요소인 기준으로 왼쪽으로부터 50% 이동 */
+    transform: translate(-50%, -20%); /* 수직, 수평 가운데 정렬 */
+    text-align: center;
+    color: white;
+    margin-top: 4.5%; /* 상위 요소의 높이에 상대적으로 위치 조정 */
+}
+
+  
+  /* 디테일 본문 내의 버튼 스타일 */
+  .detailContent button {
+    position:relative;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+
+.activeButton{
+  color: #aeeeff;
+  font-weight: bolder;
+  width: 100%;
+
+}
+
+.inActiveButton{
+  color: #606060;
+  font-weight: bolder;
+  width: 100%;
+
+}
+
+.dot{
+  color: #606060;
+  padding-bottom: 5%;
+  margin: 0;
+  font-size: 40px;
+}
+
+.menuTab{
+  width: 15%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}

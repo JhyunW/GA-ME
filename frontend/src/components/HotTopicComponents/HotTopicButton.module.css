@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    align-items: center; /* 이미지와 텍스트를 세로로 가운데 정렬 */
+}
+
+.container img {
+    margin-left: 35px;
+    margin-right: 14px; /* 이미지와 텍스트 사이의 간격을 조정 */
+    height: 20px;
+    width: auto;
+}
+.container p {
+    /* 뉴스 */
+
+font-family: 'Pretendard';
+font-style: normal;
+font-weight: 700;
+font-size: 17px;
+line-height: 26px;
+
+color: #FFFFFF;
+
+
+}
+
+.topicBtn{
+    /* Rectangle 65 */
+
+box-sizing: border-box;
+
+width: 140px;
+height: 45px;
+
+border: 3px solid #EBFBFF;
+box-shadow: 0px 0px 10px 2px #B181FF;
+border-radius: 30px;
+
+}

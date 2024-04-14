@@ -1,0 +1,83 @@
+.card {
+    background-color: #242424;
+    /* box-shadow: #545454 ; */
+    box-shadow: 0 4px 6px -1px #545454, 0 2px 4px -1px #545454; /* Example shadow */
+
+}
+
+/* neon-박스 */
+@keyframes neon {
+    from, to {
+      box-shadow:
+      0 0 5px #c8c8c8,
+      0 0 10px #c8c8c8,
+      0 0 20px #608894,
+      0 0 30px #608894,
+      0 0 40px #608894
+      /* 0 0 70px #0fa; */
+    }
+    20%, 24%, 55% {        
+        box-shadow:
+        0 0 5px #c8c8c8,
+        0 0 10px #c8c8c8,
+        0 0 15px #608894,
+        0 0 20px #608894,
+        0 0 35px #608894;
+    }
+  }
+  
+  .neonBorder {
+    animation: neon 2s infinite alternate;
+  }
+  
+
+
+  /* 네온 text */
+@keyframes neonFlicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    text-shadow:
+      0 0 5px #a40e0e,
+      0 0 10px #a40e0e,
+      0 0 20px #fb0b02,
+      0 0 30px #fb0b02,
+      0 0 40px #fb0b02
+      /* 0 0 50px #608894 */
+      /* 0 0 60px #608894 */
+      /* 0 0 70px #608894 */
+      ;
+    color: #ffffff;
+  }
+  20%, 24%, 55% {        
+    text-shadow: none;
+    color: #5e5e5e;
+  }
+}
+
+.neonText {
+  animation: neonFlicker 1.5s infinite alternate;
+}
+
+
+/* 기본네온 */
+.neonNormal {
+  color: #ee08b8; /* Set the text color */
+  text-shadow:
+  0 0 5px #ee08b8,
+  0 0 10px #cc1d95
+  /* 0 0 20px #608894 */
+  /* 0 0 30px #608894 */
+  /* 0 0 40px #608894 */
+  /* 0 0 50px #608894 */
+  /* 0 0 60px #608894 */
+  /* 0 0 70px #608894 */
+  ;
+}
+
+/* 글자수 제한 두기 */
+.truncateLines {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

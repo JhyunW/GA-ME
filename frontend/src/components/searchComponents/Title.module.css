@@ -1,0 +1,31 @@
+.titleDiv {
+  display: inline-block; /* 혹은 inline-flex */
+  margin-left: 120px;
+  left: 378px;
+  top: 234px;
+}
+.title {
+  /* Hot Topic 타이틀 */
+  font-family: "TAEBAEK font TTF";
+  font-style: bold;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 102px;
+
+  color: #ffffff;
+
+  text-shadow: 0px 0px 20px #81bece, 0px 0px 10px #81bece;
+  margin-top: 50px;
+}
+
+.detail {
+  /* 게임 소식확인 */
+  font-weight: bold;
+  font-size: 18px;
+
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  color: #ffffff;
+}

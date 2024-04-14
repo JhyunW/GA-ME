@@ -1,0 +1,165 @@
+.box {
+  background-color: #343434;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+
+  padding: 3px 5px;
+  margin-top: 30px;
+
+  margin-left: 175px;
+  width: 1070px;
+}
+
+.hr {
+  background-color: #6a6a6a;
+  border-color: #6a6a6a;
+  width: 98%;
+
+  margin-left: 10px;
+  margin-bottom: 15px;
+}
+
+.gameList {
+  display: flex;
+  flex-wrap: wrap; /* 카드가 너무 많으면 다음 줄로 넘어가게 설정 */
+  gap: 20px; /* 카드 사이의 간격을 조정 */
+  justify-content: center; /* 카드들을 중앙 정렬 */
+  align-items: flex-start; /* 카드들의 시작 지점을 기준으로 정렬 */
+  margin-top: 15px;
+
+  position: relative; /* infoText가 가득차도록 하기 위해 */
+}
+
+.mixBtn {
+  /* 기본 스타일 */
+  box-sizing: border-box;
+  width: 150px;
+  height: 40px;
+
+  border: 3px solid #ebfbff;
+  border-radius: 30px;
+
+  box-shadow: 0px 0px 10px 2px #81bece;
+
+  margin-left: 43%;
+  margin-top: 8px;
+  margin-bottom: 15px;
+
+  transition: font-size 0.3s, transform 0.3s; /* 글자 크기 및 변환에 대한 transition */
+
+  /* 호버 시 스타일 */
+  cursor: pointer;
+}
+
+.mixBtn:hover {
+  transform: scale(1.05); /* 호버 시 크기를 1.1배로 키움 */
+}
+
+.getPocketBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 수평 중앙 정렬 */
+  justify-content: center; /* 수직 중앙 정렬 */
+
+  /* 기본 스타일 */
+  margin-top: 3%;
+  transition: font-size 0.3s, transform 0.3s; /* 글자 크기 및 변환에 대한 transition */
+
+  /* 호버 시 스타일 */
+  cursor: pointer;
+}
+
+.getPocketBtn:hover {
+  /* font-size: 1.1em; 호버 시 폰트 크기를 1.1em으로 키움 */
+  transform: scale(1.05); /* 호버 시 크기를 1.1배로 키움 */
+}
+
+.container {
+  position: fixed;
+  top: 85%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loadingTitle {
+  font-size: 20px;
+  margin-top: 20px;
+}
+.loadingSubTitle {
+  font-size: 15px;
+}
+
+.loadingImg {
+  height: 50px;
+  filter: brightness(0) invert(1);
+  transition: 300ms;
+}
+
+.tagTitle {
+  display: flex; /* Flexbox 설정 */
+  align-items: center; /* 세로 중앙 정렬 */
+}
+
+.icon {
+  height: 26px;
+  width: 26px;
+  margin-left: 10px;
+}
+
+.beforeMixText {
+  margin-left: 185px;
+  margin-top: 5%;
+  font-size: 25px;
+  font-family: "Pretendard";
+  font-weight: bold;
+  color: #6a6a6a;
+
+  text-align: center; /* 가로 중앙 정렬 */
+  display: flex;
+  justify-content: center; /* 세로 중앙 정렬 */
+  align-items: center; /* 세로 중앙 정렬 */
+  height: 100%; /* 부모 요소의 높이를 사용하여 세로 중앙 정렬 */
+}
+
+.neonEffect {
+  filter: drop-shadow(0 0 3px #81bece); /* 그림자 효과 */
+}
+
+.infoText {
+  margin-top: 10%;
+  margin-left: 35%;
+  width: 35%;
+  position: absolute; /* infoText가 가득차도록 하기 위해 */
+  font-size: large;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+
+}
+
+.infoText:hover {
+  /* font-size: 1.1em; 호버 시 폰트 크기를 1.1em으로 키움 */
+  transform: scale(1.05); /* 호버 시 크기를 1.1배로 키움 */
+}

@@ -1,0 +1,11 @@
+
+.infoContainer {
+    
+    /* 수평 및 수직 가운데 정렬 */
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center; /* 수평 가운데 정렬 */
+    align-items: center; /* 수직 가운데 정렬 */
+
+}

@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* 세종병원체 폰트 */
+@font-face {
+  font-family: 'SejonghospitalBold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/SejonghospitalBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* 프리텐다드 폰트 */
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* 태백 폰트 */
+@font-face {
+  font-family: 'TAEBAEKfont';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/TAEBAEKfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 폰트 사용을 위해 변수지정 */
+
+:root {
+  --font-Pretendard: 'Pretendard-Regular', cursive;
+}
+
+body {
+  font-family: var(--font-Pretendard);
+  background-color: #232323;
+  color:white;
+}
